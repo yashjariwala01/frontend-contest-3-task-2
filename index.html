@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google font CDN link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Iconify CDN -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <title>Yash jariwala Frontend 1 AccioJob 21 January 2023</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="input-items">
+          <label for="text-field">Text Field <span>*</span></label>
+          <br />
+          <input
+            type="text"
+            id="text-field"
+            placeholder="Input Text"
+            required
+          />
+        </div>
+        <div class="input-items">
+          <label for="select-items"
+            >Select Field <i class="fa-solid fa-circle-info"></i
+          ></label>
+          <br />
+          <select name="select-fields" id="select-items">
+            <option value="select" disabled selected>Select</option>
+            <option value="item-1">item 1</option>
+            <option value="item-2">item 2</option>
+            <option value="item-3">item 3</option>
+            <option value="item-3">item 4</option>
+            <option value="item-3">item 5</option>
+          </select>
+        </div>
+        <div class="input-items">
+          <label for="text-area"
+            >Text Area <i class="fa-solid fa-circle-info"></i
+          ></label>
+          <br />
+          <textarea
+            name="text-area"
+            id="text-area"
+            placeholder="Text Area"
+          ></textarea>
+        </div>
+        <div class="input-items">
+          <label for="text-addOn"
+            >Text Field with Add-ons <span>*</span></label
+          >
+          <div class="text-addOn" id="text-field-addOn">
+            <label for="text-input">Label</label>
+            <input
+              type="text"
+              id="text-input"
+              placeholder="Input Text"
+              required
+            />
+            <button>Button</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="search-field" id="search">
+          <div class="search">
+            <iconify-icon
+              class="search-icon"
+              icon="material-symbols:search-rounded"
+              style="color: rgb(136, 131, 131)"
+              width="20"
+              height="20"
+            ></iconify-icon>
+          </div>
+          <input type="text" id="text-input" placeholder="Search" />
+        </div>
+        <div class="input-items increment-decrement">
+          <div class="increment-decrement-item decrement">
+            <iconify-icon
+              icon="ic:baseline-minus"
+              style="color: rgb(136, 131, 131)"
+              width="14"
+              height="14"
+            ></iconify-icon>
+          </div>
+          <div class="increment-decrement-item display">1</div>
+          <div class="increment-decrement-item increment">
+            <iconify-icon
+              icon="material-symbols:add"
+              style="color: rgb(136, 131, 131)"
+              width="14"
+              height="14"
+            ></iconify-icon>
+          </div>
+        </div>
+        <div class="clickable-inputs checkbox">
+          <input type="checkbox" value="checkbox"/> Checkbox
+        </div>
+        <div class="clickable-inputs radio">
+          <input type="radio" value="radio" checked /> Radio Button
+        </div>
+        <div class="clickable-inputs switch-btn">
+          <!-- Rounded switch -->
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <p>Switch</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
